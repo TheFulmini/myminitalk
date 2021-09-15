@@ -48,12 +48,15 @@ clean:
 	@${RM} ${CLIENT_OBJS}
 	@${RM} ${SERVER_OBJS_B}
 	@${RM} ${CLIENT_OBJS_B}
+	@echo "\nRemoving Objects .............. \033[31m[OK]\033[0m"
 
 fclean: clean
 	@${RM} ${NAME}
 	@${RM} ${NAME2}
 	@${RM} ${BONUS}
 	@${RM} ${BONUS2}
+	@echo "\nRemoving CLIENT .............. \033[31m[OK]\033[0m"
+	@echo "\nRemoving SERVER .............. \033[31m[OK]\033[0m"
 
 re: fclean all
 
